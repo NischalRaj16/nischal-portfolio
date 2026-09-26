@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Nischal Sadashivaiah — AI &amp; Edge-IoT Engineer</title>
+  <meta name="description" content="Portfolio of Nischal Sadashivaiah, M.S. Artificial Intelligence student at Chang Gung University, working on trustworthy edge AI and IoT security.">
+  <meta name="author" content="Nischal Sadashivaiah">
+  <meta name="theme-color" content="#030303">
+  <meta property="og:title" content="Nischal Sadashivaiah — AI &amp; Edge-IoT Engineer">
+  <meta property="og:description" content="Trustworthy AI for edge and IoT systems.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Oswald:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!-- ======= CINEMATIC BACKGROUND ENGINE ======= -->
+<div class="stage" aria-hidden="true">
+  <div class="stage-inner" id="stageInner">
+    <canvas id="stage-canvas"></canvas>
+    <video id="stage-video" playsinline muted preload="auto"></video>
+  </div>
+  <div class="stage-left"></div>
+  <div class="cine-vignette"></div>
+  <div id="cine-glow"></div>
+  <div class="cine-scan"></div>
+  <div class="cine-grain"></div>
+</div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="cur-ring" id="curRing" aria-hidden="true"></div><div class="cur-dot" id="curDot" aria-hidden="true"></div>
+
+<!-- ======= NAV ======= -->
+<header class="nav" id="nav">
+  <a href="#top" class="logo" data-magnetic>Nischal<b>.</b></a>
+  <nav class="links" id="links" aria-label="Sections">
+    <span class="pill" id="pill"></span>
+    <a href="#about" data-magnetic>About</a>
+    <a href="#work" data-magnetic>Work</a>
+    <a href="#skills" data-magnetic>Skills</a>
+    <a href="#credentials" data-magnetic>Credentials</a>
+    <a href="#experience" data-magnetic>Journey</a>
+    <a href="#contact" data-magnetic>Contact</a>
+  </nav>
+  <a href="#contact" class="nav-cta" data-magnetic><i class="beacon"></i>Open to collab</a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+</header>
+<div class="drawer" id="drawer">
+  <a href="#about"><span>01</span>About</a><a href="#work"><span>02</span>Work</a><a href="#skills"><span>03</span>Skills</a><a href="#credentials"><span>04</span>Credentials</a><a href="#experience"><span>05</span>Journey</a><a href="#contact"><span>06</span>Contact</a>
+</div>
+
+<main>
+<!-- ======= HERO ======= -->
+<section class="hero" id="top">
+  <div class="watermark" aria-hidden="true">NISCHAL</div>
+  <div class="wrap" style="width:100%">
+    <span class="eyebrow">01 / AI &amp; Edge-IoT Engineer</span>
+    <h1><span class="l1">Building AI</span><span class="l2">for the edge<span class="dot">.</span></span></h1>
+    <p class="lede">I'm <b>Nischal Sadashivaiah</b>, a Master's student in Artificial Intelligence at Chang Gung University, Taiwan. I build machine learning that runs on connected devices and catches attacks before they spread.</p>
+    <div class="ctas">
+      <a href="#work" class="btn red" data-magnetic>Explore work <span>→</span></a>
+      <a href="#contact" class="btn line" data-magnetic>Get in touch <span>↗</span></a>
+    </div>
+    <div class="telemetry">
+      <div class="tm"><b data-count="1">0</b><span>Published paper</span></div>
+      <div class="tm"><b data-count="3">0</b><span>Industry roles</span></div>
+      <div class="tm"><b>M.S.</b><span>AI · Chang Gung</span></div>
+      <div class="tm live"><b><i class="beacon"></i>OPEN</b><span>Thesis &amp; lab roles</span></div>
+    </div>
+  </div>
+  <div class="scrub-hint" aria-hidden="true"><span>Move · scroll</span><span class="track"><span class="knob" id="knob"></span></span></div>
+</section>
+
+<!-- ======= ABOUT ======= -->
+<section id="about">
+  <div class="wrap">
+    <span class="eyebrow reveal">02 / About</span>
+    <h2 class="h2 reveal">From circuits <span class="grad">to intelligence</span></h2>
+    <div class="about-grid">
+      <div class="panel reveal">
+        <div class="term-bar"><i></i><i></i><i></i><span>nischal@cgu: ~/profile</span></div>
+        <div class="term" id="term">
+          <p><span class="p">$</span> <span class="k">whoami</span></p>
+          <p>Nischal Sadashivaiah. B.E. in Electronics &amp; Communication from PES Institute of Technology and Management, Shivamogga. Now an M.S. student in Artificial Intelligence at Chang Gung University.</p>
+          <p><span class="p">$</span> <span class="k">cat</span> focus.txt</p>
+          <p>Trustworthy AI for edge and IoT systems: models that run close to the sensor, flag intrusions in network traffic, and explain what they flagged.</p>
+          <p><span class="p">$</span> <span class="k">cat</span> status.log</p>
+          <p><span class="g">[ACTIVE]</span> Looking for a thesis advisor in secure edge AI.<br><span class="c"># co-author · AI-Powered Network Intrusion Detection System · JNACS 2026</span></p>
+          <p><span class="p">$</span> <span class="caret"></span></p>
+        </div>
+      </div>
+      <div class="panel strengths reveal">
+        <h3>Core strengths</h3>
+        <div class="str"><span class="n">01</span><div><b>Hardware sense</b><p>An ECE degree and embedded industry work mean I think about memory, power and latency from the start.</p></div></div>
+        <div class="str"><span class="n">02</span><div><b>Security mindset</b><p>My published work treats every packet as a question: normal traffic, or an attack?</p></div></div>
+        <div class="str"><span class="n">03</span><div><b>Delivery</b><p>Training at BEL and coordinating projects taught me documentation, deadlines and teamwork.</p></div></div>
+      </div>
+      <div class="panel matrix reveal">
+        <h3>Skills matrix</h3>
+        <div class="mx">
+          <div class="cell"><span class="t">Sense</span><b>Embedded &amp; IoT</b><p>Microcontrollers, sensors, firmware and networked devices.</p></div>
+          <div class="cell"><span class="t">Learn</span><b>Machine learning</b><p>Classification and anomaly detection on real traffic data.</p></div>
+          <div class="cell"><span class="t">Defend</span><b>Network security</b><p>Intrusion detection, traffic features, threat models.</p></div>
+          <div class="cell"><span class="t">Reason</span><b>LLMs for security</b><p>Using language models to explain and triage alerts.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= PROJECTS ======= -->
+<section id="work">
+  <div class="wrap">
+    <span class="eyebrow reveal">03 / Work</span>
+    <h2 class="h2 reveal">Research <span class="grad">&amp; projects</span></h2>
+    <p class="sec-intro reveal">One published system and the two directions I plan to take it for my thesis.</p>
+    <div class="pgrid">
+      <article class="pcard reveal" data-tilt><span class="spot"></span><span class="beam"></span>
+        <div class="top"><span class="status pub">Published</span><span class="idx">JNACS · 2026</span></div>
+        <h3>AI-powered network intrusion detection</h3>
+        <p>A co-authored study that uses machine learning to classify network traffic and flag intrusions, learning what normal and malicious traffic look like instead of relying on hand-written signatures.</p>
+        <div class="flow"><b>packets</b><i>→</i><b>features</b><i>→</i><b>model</b><i>→</i><b>alert</b></div>
+        <div class="chips"><span class="chip">Intrusion detection</span><span class="chip">ML</span><span class="chip">Anomaly detection</span></div>
+        <div class="meta">Journal of Networking and Communication Systems · Vol 9, No 2 · April 2026</div>
+      </article>
+      <article class="pcard reveal" data-tilt><span class="spot"></span><span class="beam"></span>
+        <div class="top"><span class="status dir">Thesis direction</span><span class="idx">Edge · AIoT</span></div>
+        <h3>Secure edge AI for IoT</h3>
+        <p>Moving detection onto gateways and microcontrollers. How small can an intrusion model get before it stops being trustworthy, and how do we keep it robust against inputs crafted to fool it?</p>
+        <div class="flow"><b>sensor</b><i>→</i><b>edge model</b><i>→</i><b>local action</b></div>
+        <div class="chips"><span class="chip">TinyML</span><span class="chip">Compression</span><span class="chip">Adversarial robustness</span></div>
+        <div class="meta">Constraints: memory · latency · power</div>
+      </article>
+      <article class="pcard reveal" data-tilt><span class="spot"></span><span class="beam"></span>
+        <div class="top"><span class="status dir">Thesis direction</span><span class="idx">LLM · Security</span></div>
+        <h3>LLM-augmented IoT security</h3>
+        <p>Pairing a fast detector with a language model that groups related alerts, explains in plain language why traffic looks suspicious, and suggests a response an operator can check.</p>
+        <div class="flow"><b>alert</b><i>→</i><b>LLM reasoning</b><i>→</i><b>operator</b></div>
+        <div class="chips"><span class="chip">LLMs</span><span class="chip">Explainability</span><span class="chip">Alert triage</span></div>
+        <div class="meta">Risk to manage: hallucinated verdicts</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ======= SKILLS ======= -->
+<section id="skills">
+  <div class="wrap">
+    <span class="eyebrow reveal">04 / Skills</span>
+    <h2 class="h2 reveal">The <span class="grad">toolkit</span></h2>
+    <div class="sgrid">
+      <div class="panel scat reveal"><span class="beam"></span><div class="hd"><h3>Languages</h3><span>01</span></div><div class="pills"><span class="chip">Python</span><span class="chip">C</span><span class="chip">Embedded C</span><span class="chip">SQL</span></div></div>
+      <div class="panel scat reveal"><span class="beam"></span><div class="hd"><h3>AI / ML</h3><span>02</span></div><div class="pills"><span class="chip">PyTorch</span><span class="chip">scikit-learn</span><span class="chip">NumPy</span><span class="chip">Pandas</span><span class="chip">Anomaly detection</span></div></div>
+      <div class="panel scat reveal"><span class="beam"></span><div class="hd"><h3>Embedded &amp; IoT</h3><span>03</span></div><div class="pills"><span class="chip">Microcontrollers</span><span class="chip">Sensors</span><span class="chip">Firmware</span><span class="chip">IoT gateways</span></div></div>
+      <div class="panel scat reveal"><span class="beam"></span><div class="hd"><h3>Networks &amp; security</h3><span>04</span></div><div class="pills"><span class="chip">Intrusion detection</span><span class="chip">Traffic analysis</span><span class="chip">TCP/IP</span></div></div>
+      <div class="panel scat reveal"><span class="beam"></span><div class="hd"><h3>Tools</h3><span>05</span></div><div class="pills"><span class="chip">Git</span><span class="chip">Linux</span><span class="chip">Jupyter</span></div></div>
+      <div class="panel scat reveal"><span class="beam"></span><div class="hd"><h3>Core</h3><span>06</span></div><div class="pills"><span class="chip">Signals &amp; systems</span><span class="chip">Communication systems</span><span class="chip">Technical writing</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= CREDENTIALS ======= -->
+<section id="credentials">
+  <div class="wrap">
+    <span class="eyebrow reveal">05 / Credentials</span>
+    <h2 class="h2 reveal">Degrees, <span class="grad">papers &amp; training</span></h2>
+    <p class="sec-intro reveal">Drag to spin. Click a card to bring it forward, then click it again for details.</p>
+  </div>
+  <div class="ring-stage" id="ringStage"><div class="ring" id="ring"></div></div>
+  <div class="ring-ctl"><div class="dots" id="dots"></div><button class="spin-btn" id="spinBtn" type="button">[AUTO-SPIN ON]</button></div>
+</section>
+
+<!-- ======= EXPERIENCE ======= -->
+<section id="experience">
+  <div class="wrap">
+    <span class="eyebrow reveal">06 / Journey</span>
+    <h2 class="h2 reveal">Experience <span class="grad">&amp; education</span></h2>
+    <div class="filters" id="filters">
+      <button class="on" data-f="all" type="button">All</button>
+      <button data-f="work" type="button">Work experience</button>
+      <button data-f="edu" type="button">Education</button>
+    </div>
+    <div class="spine-wrap" id="spineWrap">
+      <div class="spine"></div><div class="spine-fill" id="spineFill"></div>
+      <div id="milestones">
+        <div class="ms edu"><i class="node"></i><div class="panel card"><span class="kind">Education</span><span class="when">2026 — NOW</span><h3>M.S. Artificial Intelligence</h3><span class="org">Chang Gung University · Taoyuan, Taiwan</span><p>First-year student focusing on AI/ML and AIoT. Looking for a thesis advisor in trustworthy and secure edge AI.</p></div></div>
+        <div class="ms work"><i class="node"></i><div class="panel card"><span class="kind">Work</span><span class="when">MAY — JUL 2026</span><h3>Project Coordinator</h3><span class="org">Vidyavahini College · Tumkur</span><p>Coordinated project work at the college before starting my Master's.</p></div></div>
+        <div class="ms work"><i class="node"></i><div class="panel card"><span class="kind">Work</span><span class="when">DEC 2025 — APR 2026</span><h3>GAPP Trainee</h3><span class="org">Bharat Electronics Limited · Bengaluru</span><p>Graduate apprentice at one of India's major defence-electronics manufacturers.</p></div></div>
+        <div class="ms work"><i class="node"></i><div class="panel card"><span class="kind">Work</span><span class="when">FEB — MAY 2025</span><h3>Embedded Systems Engineering Intern</h3><span class="org">Handshake Networking LLP · Bengaluru</span><p>Hands-on work with embedded hardware and networked devices.</p></div></div>
+        <div class="ms edu"><i class="node"></i><div class="panel card"><span class="kind">Education</span><span class="when">B.E.</span><h3>B.E. Electronics &amp; Communication</h3><span class="org">PES Institute of Technology and Management · Shivamogga</span><p>Circuits, signals, communication systems and embedded programming.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= CONTACT ======= -->
+<section id="contact">
+  <div class="wrap">
+    <span class="eyebrow reveal">07 / Contact</span>
+    <h2 class="h2 reveal">Let's build <span class="grad">something secure</span></h2>
+    <div class="cgrid">
+      <div class="panel cinfo reveal"><span class="beam"></span>
+        <p class="sec-intro" style="margin:0 0 6px">Open to thesis supervision, lab positions, research collaboration and internships in edge AI and IoT security.</p>
+        <div class="crow"><span>Email</span><span id="email">nischals.shiva@gmail.com</span></div>
+        <div class="crow"><span>Based in</span><span>Bengaluru, India</span></div>
+        <div class="crow"><span>Status</span><span style="color:var(--ok);display:inline-flex;align-items:center;gap:8px"><i class="beacon"></i>Available</span></div>
+        <button class="copy" id="copyBtn" type="button" data-magnetic>Copy email</button>
+      </div>
+      <form class="panel cform reveal" id="cform" novalidate><span class="beam"></span>
+        <div class="fields">
+          <div class="f"><label for="cf-name">Name</label><input id="cf-name" name="name" autocomplete="name" placeholder="Your name"></div>
+          <div class="f"><label for="cf-org">Lab / organisation</label><input id="cf-org" name="org" placeholder="Where you're from"></div>
+          <div class="f full"><label for="cf-msg">Message</label><textarea id="cf-msg" name="msg" placeholder="What would you like to talk about?"></textarea></div>
+        </div>
+        <div class="act"><button class="btn red" type="submit" data-magnetic>Prepare email <span>→</span></button><span class="note" id="note">Your message is copied so you can paste it into an email to me.</span></div>
+      </form>
+    </div>
+    <footer><span>© 2026 Nischal Sadashivaiah · Designed &amp; built by Nischal</span><span>Chang Gung University · Dept. of AI</span></footer>
+  </div>
+</section>
+</main>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="panel mbox"><span class="beam"></span><button class="mclose" id="mClose" type="button" aria-label="Close">×</button><div id="mBody"></div></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
