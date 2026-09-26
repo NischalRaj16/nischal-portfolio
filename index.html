@@ -3,6 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://nischalraj16.github.io/nischal-portfolio/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nischalraj16.github.io/nischal-portfolio/">
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Nischal Sadashivaiah","url":"https://nischalraj16.github.io/nischal-portfolio/","jobTitle":"M.S. student in Artificial Intelligence","affiliation":{"@type":"CollegeOrUniversity","name":"Chang Gung University"},"alumniOf":{"@type":"CollegeOrUniversity","name":"PES Institute of Technology and Management"},"knowsAbout":["Edge AI","AIoT","IoT security","Intrusion detection","Machine learning"],"sameAs":["https://github.com/NischalRaj16"]}
+  </script>
   <title>Nischal Sadashivaiah — AI &amp; Edge-IoT Engineer</title>
   <meta name="description" content="Portfolio of Nischal Sadashivaiah, M.S. Artificial Intelligence student at Chang Gung University, working on trustworthy edge AI and IoT security.">
   <meta name="author" content="Nischal Sadashivaiah">
@@ -13,8 +24,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Oswald:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/extra.css">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
+<noscript><span class="nos">This site works without JavaScript, but the video background, 3D ring and credential check need it.</span></noscript>
 <!-- ======= CINEMATIC BACKGROUND ENGINE ======= -->
 <div class="stage" aria-hidden="true">
   <div class="stage-inner" id="stageInner">
@@ -39,6 +53,7 @@
     <a href="#work" data-magnetic>Work</a>
     <a href="#skills" data-magnetic>Skills</a>
     <a href="#credentials" data-magnetic>Credentials</a>
+    <a href="#verify" data-magnetic>Verify</a>
     <a href="#experience" data-magnetic>Journey</a>
     <a href="#contact" data-magnetic>Contact</a>
   </nav>
@@ -46,14 +61,14 @@
   <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
 </header>
 <div class="drawer" id="drawer">
-  <a href="#about"><span>01</span>About</a><a href="#work"><span>02</span>Work</a><a href="#skills"><span>03</span>Skills</a><a href="#credentials"><span>04</span>Credentials</a><a href="#experience"><span>05</span>Journey</a><a href="#contact"><span>06</span>Contact</a>
+  <a href="#about"><span>01</span>About</a><a href="#work"><span>02</span>Work</a><a href="#skills"><span>03</span>Skills</a><a href="#credentials"><span>04</span>Credentials</a><a href="#verify"><span>05</span>Verify</a><a href="#experience"><span>06</span>Journey</a><a href="#contact"><span>07</span>Contact</a>
 </div>
 
-<main>
+<main id="main">
 <!-- ======= HERO ======= -->
 <section class="hero" id="top">
   <div class="watermark" aria-hidden="true">NISCHAL</div>
-  <div class="wrap" style="width:100%">
+  <div class="wrap full">
     <span class="eyebrow">01 / AI &amp; Edge-IoT Engineer</span>
     <h1><span class="l1">Building AI</span><span class="l2">for the edge<span class="dot">.</span></span></h1>
     <p class="lede">I'm <b>Nischal Sadashivaiah</b>, a Master's student in Artificial Intelligence at Chang Gung University, Taiwan. I build machine learning that runs on connected devices and catches attacks before they spread.</p>
@@ -170,10 +185,37 @@
   <div class="ring-ctl"><div class="dots" id="dots"></div><button class="spin-btn" id="spinBtn" type="button">[AUTO-SPIN ON]</button></div>
 </section>
 
+<!-- ======= VERIFY (blockchain-anchored credentials) ======= -->
+<section id="verify">
+  <div class="wrap">
+    <span class="eyebrow reveal">06 / Verify</span>
+    <h2 class="h2 reveal">On-chain <span class="grad">proof</span></h2>
+    <p class="sec-intro reveal">Every record on this page is hashed with SHA-256. The hashes form a Merkle tree, and its root is timestamped on the Bitcoin blockchain with OpenTimestamps. Your browser re-checks all of it below. No wallet needed.</p>
+    <div class="vgrid">
+      <div class="panel vpanel reveal"><span class="beam"></span>
+        <div class="vhead"><h3>Records checked in your browser</h3><button class="vbtn" id="verifyBtn" type="button" data-magnetic>Run verification</button></div>
+        <p class="vstatus" id="verifyStatus" role="status" aria-live="polite">Scroll here or press the button to run the check.</p>
+        <ul class="vlist" id="verifyList"></ul>
+      </div>
+      <div class="panel vpanel reveal"><span class="beam"></span>
+        <div class="vhead"><h3>Merkle root · anchored on Bitcoin</h3></div>
+        <div class="vroot" id="verifyRoot">ee03f7a7c2697b2704a1b3966ea8d0627b92732cf93baa53862d582c032094f3</div>
+        <ol class="vsteps">
+          <li>Download <a href="proofs/merkle-root.txt" download>merkle-root.txt</a> and its proof <a href="proofs/merkle-root.txt.ots" download>merkle-root.txt.ots</a>.</li>
+          <li>Drop both on <a href="https://opentimestamps.org" target="_blank" rel="noopener noreferrer">opentimestamps.org</a> to see the Bitcoin block that contains it.</li>
+          <li>Change any character in <a href="credentials.json">credentials.json</a> and the check on the left turns red.</li>
+        </ol>
+        <div class="vlinks"><a href="credentials.json">credentials.json</a><a href="https://github.com/NischalRaj16/nischal-portfolio/blob/main/docs/VERIFY.md" rel="noopener noreferrer">How it works</a><a href="https://github.com/NischalRaj16/nischal-portfolio/blob/main/docs/SECURITY.md" rel="noopener noreferrer">Security</a></div>
+        <p class="vnote">This proves the records have not been changed since they were timestamped. It is a self-published record, not a replacement for an official transcript or letter.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ======= EXPERIENCE ======= -->
 <section id="experience">
   <div class="wrap">
-    <span class="eyebrow reveal">06 / Journey</span>
+    <span class="eyebrow reveal">07 / Journey</span>
     <h2 class="h2 reveal">Experience <span class="grad">&amp; education</span></h2>
     <div class="filters" id="filters">
       <button class="on" data-f="all" type="button">All</button>
@@ -196,14 +238,14 @@
 <!-- ======= CONTACT ======= -->
 <section id="contact">
   <div class="wrap">
-    <span class="eyebrow reveal">07 / Contact</span>
+    <span class="eyebrow reveal">08 / Contact</span>
     <h2 class="h2 reveal">Let's build <span class="grad">something secure</span></h2>
     <div class="cgrid">
       <div class="panel cinfo reveal"><span class="beam"></span>
-        <p class="sec-intro" style="margin:0 0 6px">Open to thesis supervision, lab positions, research collaboration and internships in edge AI and IoT security.</p>
+        <p class="sec-intro tight">Open to thesis supervision, lab positions, research collaboration and internships in edge AI and IoT security.</p>
         <div class="crow"><span>Email</span><span id="email">nischals.shiva@gmail.com</span></div>
         <div class="crow"><span>Based in</span><span>Bengaluru, India</span></div>
-        <div class="crow"><span>Status</span><span style="color:var(--ok);display:inline-flex;align-items:center;gap:8px"><i class="beacon"></i>Available</span></div>
+        <div class="crow"><span>Status</span><span class="ok-text"><i class="beacon"></i>Available</span></div>
         <button class="copy" id="copyBtn" type="button" data-magnetic>Copy email</button>
       </div>
       <form class="panel cform reveal" id="cform" novalidate><span class="beam"></span>
@@ -215,7 +257,7 @@
         <div class="act"><button class="btn red" type="submit" data-magnetic>Prepare email <span>→</span></button><span class="note" id="note">Your message is copied so you can paste it into an email to me.</span></div>
       </form>
     </div>
-    <footer><span>© 2026 Nischal Sadashivaiah · Designed &amp; built by Nischal</span><span>Chang Gung University · Dept. of AI</span></footer>
+    <footer><span>© 2026 Nischal Sadashivaiah · Designed &amp; built by Nischal</span><span><a href="#verify">Verified on Bitcoin</a> · <a href="https://github.com/NischalRaj16/nischal-portfolio" rel="noopener noreferrer">Source</a></span></footer>
   </div>
 </section>
 </main>
@@ -223,7 +265,7 @@
 <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
   <div class="panel mbox"><span class="beam"></span><button class="mclose" id="mClose" type="button" aria-label="Close">×</button><div id="mBody"></div></div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/verify.js" defer></script>
 </body>
 </html>
