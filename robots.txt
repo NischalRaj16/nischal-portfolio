@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nischalraj16.github.io/nischal-portfolio/sitemap.xml
